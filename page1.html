@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blank Page</title>
+</head>
+<style>
+    body {
+        background-color: white;
+        margin: 0;
+        padding: 20px;
+    }
+</style>
+<script>
+let typed = "";
+
+document.addEventListener("keydown", function(event) {
+    typed += event.key;
+
+    // keep it from getting too long
+    if (typed.length > 10) {
+        typed = typed.slice(-10);
+    }
+
+    if (typed.includes("horse")) {
+        document.getElementById("horseSound").play("horsesound.mp3");
+        typed = ""; // reset so it doesn't spam
+    }
+});
+</script>
+<body>
+
+    <p>Henry Dobesh is a fine artist, he paints and loves projectors <br><br><br><br>hi</p>
+
+    <audio id="horseSound" src="horsesound.mp3"></audio>
+
+    <img src="portrait may 2025.jpeg" style="width:  300px;" alt="self portrait painted may 2025">
+     <p><em>Portrait May 2025</em>, 2025
+        <br>acrylic on canvas
+        <br> add dimesion</p>
+
+    <img src="PleaseStopHittingMe.gif" style="width:  600px;" alt="performance piece">
+     <p><em>Please Stop Hitting Me</em>, 2025
+        <br>performance - in conjunction with ARTS:331 - Video Art, for the project<p>
+
+    <img src="The Big Couch Upstairs.jpg" style="width:  300px;" alt="painting of field with abstract sky">
+     <p><em>The Big Couch Upstairs"</em>, </p>
+
+    <img src="Floating in space.jpeg" style="width:  500px;" alt="abstract piece">
+     <p><em>Floating In Space</em>, 2024
+        <br>oil and graphite on canvas panel
+        <br> add dimesion</p>
+
+    <img src="FootInToilet.jpg" style="width:  450px;" alt="my foot in a toilet">
+     <p><em>FootInToilet</em>, 2024
+        <br>acrylic on paper
+        <br> add dimesion</p>
+    
+    <img src="Logan.jpeg" style="width:  400px;" alt="Logan Harris">
+     <p><em>Logan</em>, 2020
+        <br>graphite on canvas board
+        <br> add dimesion</p>
+</body>
+
+<a href="page1.html">Go back home</a>
+
+</html>
